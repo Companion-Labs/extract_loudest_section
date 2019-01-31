@@ -196,7 +196,7 @@ int main(int argc, const char* argv[]) {
     const std::string input_filename = input_filenames[i];
     const std::string output_filename = output_filenames[i];
     const int64_t desired_length_ms = 1000;
-    const float min_volume = 0.004f;
+    const float min_volume = 0.000f;
     Status trim_status =
       TrimFile(input_filename, output_filename, desired_length_ms, min_volume);
     if (!trim_status.ok()) {
